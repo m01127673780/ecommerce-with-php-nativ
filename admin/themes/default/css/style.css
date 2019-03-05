@@ -1,0 +1,279 @@
+/* start main rules */
+body{background-color: #F4F4F4;font-size: 16px;}
+h1{font-size: 40px;margin: 30px 0;font-weight: bold;color: #666;}
+/* end main rules */
+
+/* start login form */
+.login {width: 300px; margin: 100px auto;} 
+.login h4{color: #888;}
+.login input{margin-bottom: 10px;}
+.login .form-control{background-color: #EAEAEA;}
+.login .btn{background-color: #008DDE;}
+.loginmsg{bottom:-60px}
+/* end login form */
+
+/* start navbar */
+.nav-item a, .navbar-brand{color: #fff !important; padding: 11px 12px;}
+.dropdown-menu{left :auto; right:0; min-width: 11rem; padding: 0; margin: 0; border-radius: 0; border: none;}
+.dropdown-menu a{font-size: 1em; padding: 10px 15px;}
+.dropdown-menu a:hover, .dropdown-menu a:focus{color: #fff !important; background-color: #8e44ad;}
+.navbar-brand{font-size: 1em; }
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark 
+.navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show>.nav-link, .dropdown-menu{background-color: #3498db;}
+/* end navbar */
+
+
+/**************************** start selectbox ****************************/
+.selectboxit-container{ width:100% !important}
+.selectboxit-container .selectboxit{width:100% !important; height: 38px;}
+/**************************** End selectbox ****************************/
+
+
+/**************************** Start member page ****************************/
+
+/* start form */
+.col-form-label{text-align: right;}
+.asterisk{font-size: 30px; position: absolute; right: 31px; top: 1px; color: #D20707;}
+/* end form */
+
+/* start main table */
+.main-table{-webkit-box-shadow: 0 3px 10px #ccc; -moz-box-shadow: 0 3px 10px #ccc; box-shadow: 0 3px 10px #ccc;}
+.main-table thead tr:first-child th{background: #333;color: #fff;}
+.main-table tbody td{background-color: #fff; vertical-align:middle !important;/* height: 50px*/}
+.main-table .control{text-align: left; }
+.main-table .btn{padding: 3px 10px;     margin-bottom: 1px;}
+.main-table .activate{margin-left: 5px;}
+.main-table .fas{position: relative;left:-3px;}
+.main-table .desc{display: inline-block; width:130px; height: 125px; overflow-y: auto;}
+/* end table */
+
+/**************************** End member page ****************************/
+
+
+/**************************** Start dashboard page ****************************/
+
+.home-stats .stat{padding: 20px; font-size: 15px; color: #FFF; border-radius: 10px;}
+.home-stats .stat span{display: block; font-size: 60px}
+.home-stats .stat a{color: #FFF;}
+.home-stats .stat a:hover{text-decoration: none;}
+.home-stats .st-member{background: #3498db; overflow: hidden;}
+.home-stats .dash{font-size: 36px; position: relative; bottom: 79px; color: #fff; right: 69px;}
+.home-stats .st-pending{background: #c0392b}
+
+
+
+.home-stats .st-item{background: #d35400}
+.home-stats .st-comment{background: #8e44ad}
+.latest{margin-top: 40px;margin-bottom: 40px}
+.latest .toggle-info{cursor: pointer; color: #999;}
+.latest .toggle-info:hover{color: #444;}
+.latest-users li{padding: 10px; overflow: hidden;}
+.latest-users li:nth-child(odd){background: #EEE;}
+.latest-users .btn-success, .latest-users .btn-info{padding: 2px 9px;margin-right: 4px;}
+
+
+/**************************** End dashboard page ****************************/
+
+
+/**************************** Start categories page ****************************/
+
+.categories .card-header{color: #959595;font-weight: bold;}
+.categories hr{margin:0px;}
+.categories .ordering a{color: #888; text-decoration: none;}
+.categories .ordering span{color: #888; text-decoration: none;cursor: pointer;}
+.categories .ordering .active{color: #f00; font-weight: bold;}
+.categories a{margin-top: 12px}
+.cat{overflow: hidden;padding: 20px 25px;}
+.cat:last-of-type ~ hr{display: none;}
+.categories .card-body{padding: 0px }
+.cat .visible, .cat .comment, .cat .ads{color: #FFF; padding: 4px 6px ; margin-right: 10px; border-radius: 6px;}
+.cat .visible{background: #c0392b;}
+.cat .comment{background: #2C3E50;}
+.cat .ads{background: #d35400;}
+.cat .hidden-button{margin-right: -190px;margin-top: 15px;}
+.cat:hover{background: #EEE;}
+.cat:hover .hidden-button{margin-right: 10px;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; 
+                          -o-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
+.cat .hidden-button a{margin-right: 5px;}
+.cat .card-title{cursor: pointer; font-weight: bold; color: #6A6A6A;}
+.cat .full-view p{color: #707070;}
+
+/**************************** End categories page ****************************/
+
+
+
+/**************************** start comments page ****************************/
+
+.edit-comment textarea{resize: none; height: 80px}
+
+/**************************** end comments page ****************************/
+
+
+
+
+/**************************** start item page ****************************/
+.warn-right{color: #f01c1c; line-height: 16px; position: relative; left: -240px; top: 3.6px;}
+/**************************** end item page ****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================*/
+.Add-st-member{background: #34db3e!important; overflow: hidden;}
+.Add-st-item{background: #ffcc00!important; overflow: hidden;}
+.Add-st-categories{background: #333!important; overflow: hidden;}
+.td-image img {
+    width: 50px;
+    height: 51px;
+    padding-bottom: 10px;
+}
+/*============================*/
+
+
+
+
+
+@media (max-width: 767px) {
+  .table-wrap table,
+  .table-wrap thead,
+  .table-wrap tbody,
+  .table-wrap th,
+  .table-wrap td,
+  .table-wrap tr {
+    display: block;
+  }
+  .table-wrap thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table-wrap td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%!important;
+    white-space: normal;
+    text-align: left;
+  }
+  .table-wrap td:before {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+  .table-wrap td:first-child {
+    padding-top: 17px;
+  }
+  .table-wrap td:last-child {
+    padding-bottom: 16px;
+  }
+  .table-wrap td:first-child:before {
+    top: 17px;
+  }
+  .table-wrap td:before {
+    content: attr(data-title);
+  }
+  .table tbody tr {
+    border-top: 1px solid #ddd;
+  }
+  .table tbody tr td {
+    border: none;
+  }
+}
+
+
+/* Demo only */
+ 
+ 
+.table-wrap {
+  background: #fff;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+@media (min-width: 768px) {
+  .table thead tr th,
+  .table tbody tr td {
+    padding: 15px 20px;
+  }
+}
+
+/*=============================================*/
+
+
+@media (max-width:400px){
+.hiddin-in-400 {
+	display: none!important;
+
+}
+
+}
+@media (max-width: 767px){
+.table-wrap td:last-child {
+    padding-bottom: 16px;
+    margin-bottom: 50px !important;
+    /* display: inline; */
+}
+.hiddin-in-768{
+	display: none!important;
+}
+.btn-smol i {
+
+}
+ .main-table .btn .hiddin-in-768{
+
+	display: none!important;
+
+ }
+.main-table .btn {
+    /* padding: 3px 10px; */
+    width: 43px;
+    height: 40px;
+    text-align: center;
+}
+
+
+.main-table .fas {
+    position: relative;
+    left: 0;
+    padding-top: 7px;
+ }
+ .main-table .btn {
+    /* padding: 3px 10px; */
+    max-width: 30%;
+}
+
+.main-table tbody td {
+    background-color: #fff;
+    vertical-align: middle !important;
+    max-height: 100px;
+}
+
+
+
+
+
+
+
+} 
+/*=============================================*/
