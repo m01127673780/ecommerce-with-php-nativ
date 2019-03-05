@@ -1,0 +1,169 @@
+/* start main rules */
+body{background-color: #F4F4F4;font-size: 16px;}
+h1{font-size: 40px;margin: 30px 0;font-weight: bold;color: #666;}
+/* end main rules */
+
+
+/* start navbar */
+.nav-item a, .navbar-brand{color: #fff !important; padding: 11px 12px;}
+.dropdown-menu{left :auto; right:0; min-width: 11rem; padding: 0; margin: 0; border-radius: 0; border: none;}
+.dropdown-menu a{font-size: 1em; padding: 10px 15px;}
+.dropdown-menu a:hover, .dropdown-menu a:focus{color: #fff !important; background-color: #8e44ad;}
+.navbar-brand{font-size: 1em; }
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark 
+.navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show>.nav-link, .dropdown-menu{background-color: #3498db;}
+/* end navbar */
+
+/* start form */
+.col-form-label{text-align: right;}
+.form-group{position: relative;}
+.asterisk{font-size: 25px; position: absolute; right: 15px; top: 4px; color: #D20707;}
+.asteriskbig .asterisk{right: 31px; }
+/* end form */
+
+/**************************** start selectbox ****************************/
+.selectboxit-container{ width:100% !important}
+.selectboxit-container .selectboxit{width:100% !important;height: 38px;}
+/**************************** End selectbox ****************************/
+
+
+/**************************** start header ****************************/
+.upper{padding: 7px;}
+.upper a{text-decoration: none;}
+.btn-group .name{cursor: pointer; border: 1px solid #cfcaca;}
+.btn-group .name::after{margin-left: -0.5px; position: relative; top: 2.2px;}
+.upper img{width: 33px; height: 34px;}
+/**************************** end header ****************************/
+
+/**************************** start categories page ****************************/
+.items .img-thumbnail{border: none; padding: 24px;padding-top: 5px; padding-bottom: 3px;}
+.items .price-tag{background: #B4B4B4; position: absolute; padding: 2px 10px; top: 10px; font-weight: bold; color: #FFF;}
+.items .empty, .item-info .empty {background: #FFF; padding: 5px; padding-left: 12px; border-left: 3px solid green; margin-top: 60px}
+.items .details{display: inline-block; height: 168px; overflow: hidden; margin-bottom: 7px}
+/**************************** end categories page ****************************/
+
+
+/**************************** start login page ****************************/
+.log h1{font-size: 55px;}
+.log .selected{color: #B22020}
+.log h1{color: #C0C0C0; cursor: pointer;}
+.log form{margin: 0 auto; max-width: 350px}
+.log input{margin-bottom: -4px;}
+.log .signup{display: none;}
+.log [data-class="login"].selected {color: #337AB7;}
+.log [data-class="signup"].selected {color: #5cb85c;}
+.errmsg{margin: 0 auto; max-width: 380px; border:1px solid #e0e0e0; border-left: 3px solid #cd6858; margin-top: 7px; padding: 8px;
+        color:#6e6a6a; }
+.errmsg:first-of-type{margin-top: 20px;}
+/**************************** end login page ****************************/
+
+
+/**************************** start profile page ****************************/
+.info, .ads, .latest{margin-top: 20px }
+.info ul{margin: 0px;}
+.info li{padding: 10px;}
+.info li:nth-child(odd){background: #EEE;}
+.info li span{display: inline-block; width: 120px;}
+.info a{border: 1px solid #c4c0c0; margin-top: 8px;}
+.items .date{font-size: 13px; color: #AAA; font-weight: bold;}
+.items .card-img-top{height: 220px !important; background: #FFF;}
+.items .back-img{height: 220px !important; background: #FFF;}
+.items .back-img img{height: 220px; max-width: 100%; max-height: 100%;}
+.items .cont-ads .btn{padding: 7px 35px;}
+.items .cont-ads{margin-bottom: 10px}
+.warn-right{color: #f01c1c; line-height: 16px; position: relative; left: -240px; top: 3.6px;}
+.ads a{text-decoration: none;}
+.ads .card{margin-bottom: 20px;}
+.ads .home{margin-top: 60px}
+.latest .com{padding-left: 10px}
+.latest .com:nth-child(odd){background: #EEE}
+/**************************** end profile page ****************************/
+
+
+/**************************** start newads page ****************************/
+.main-form .asterisk{font-size: 30px; position: absolute; right: 30px; top: 4px; color: #D20707;}
+.items .def-img{ width:270px;}
+.items .def{font-weight: 900; font-size: 264px; margin: auto; margin-top: 20px;}
+.newads textarea{resize: none; overflow-y: auto;}
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  /*color: red !important;*/
+}
+::-moz-placeholder { /* Firefox 19+ */
+  /*color: pink;*/
+}
+:-ms-input-placeholder { /* IE 10+ */
+  /*color: pink;*/
+}
+:-moz-placeholder { /* Firefox 18- */
+  /*color: pink;*/
+}
+/**************************** end newads page ****************************/
+
+
+
+/**************************** start items page ****************************/
+.item-info .item{margin-top: 70px !important}
+.item-info li{padding: 10px 0;}
+.item-info li:nth-child(odd){background: #e8e8e8;}
+.item-info span{display: inline-block; width: 120px;}
+.item-info i{width: 25px; margin-left: 7px;}
+.item-info .fa-calendar-alt{font-size: 17px;}
+.item-info .money{font-size: 16px}
+.item-info hr{border-top-color: #C9C9C9;}
+.item-info .item img {max-height: 323px}
+.item-info .empty{ margin-bottom: 40px; margin-top: 10px;}
+.add-comment{padding-left: 15px;}
+.add-comment textarea{   
+ display: block;
+    resize: none;
+    margin-top: 10px;
+    width: 140%;
+    height: 135px;}
+.add-comment input{margin-top: 10px}
+.comment-box{margin-bottom: 20px;}
+.comment-box img{max-width: 100px; }
+.comment-box p{background: #EEE; padding: 10px; margin-top: 20px}
+.comment-box:last-of-type hr{display: none}
+.comment-box p:before{content: ""; border: 15px solid; border-color: transparent #EEE transparent transparent; position: absolute;
+                      left: -14px; top: 28px}
+/**************************** end items page ****************************/
+
+
+
+
+
+
+
+
+  #exzoom {
+        width: 400px;
+        /*height: 400px;*/
+    }
+    .container {   }
+    .hidden { display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
