@@ -17,8 +17,8 @@ if(isset($_SESSION['username'])){
    
   <h1 class="text-center">Manage Members</h1>
 <div class="container">
-<div class="table-responsive">
-  <table class="main-table table table-bordered text-center">
+<div class="table-wrap">
+  <table class="table table-striped main-table table table-bordered text-center">
   <thead>
     <tr>
       <th scope="col">#ID</th>
@@ -39,10 +39,12 @@ if(isset($_SESSION['username'])){
                echo "<td>".$row['fullname']."</td>";
                echo "<td>".$row['date']."</td>";
                echo "<td class='control'> 
-                          <a href='?action=edit&userid=" .$row['userid']. "' class='btn btn-success'><i class='fas fa-edit'></i>Edit</a>
-                          <a href='?action=delete&userid=" .$row['userid']. "' class='btn btn-danger confirm'><i class='fas fa-times'></i>Delete</a>";
+                    <a href='?action=add' class='btn btn-primary'><i class='fa fa-plus'></i> </a>
+
+                          <a href='?action=edit&userid=" .$row['userid']. "' class='btn btn-success'><i class='fas fa-edit'></i><span class= 'hiddin-in-768 '>Edit </span></a>
+                          <a href='?action=delete&userid=" .$row['userid']. "' class='btn btn-danger confirm'><i class='fas fa-times'></i><span class= 'hiddin-in-768 '>Delete </span></a>";
                     if ($row['regstatus'] == 0){
-                        echo "<a href='?action=activate&userid=" .$row['userid']. "' class='btn btn-info activate'><i class='fas fa-edit'></i>Activate</a>";
+                        echo "<a href='?action=activate&userid=" .$row['userid']. "' class='btn btn-info activate'><i class='fas fa-user-plus'></i><span class= 'hiddin-in-768 '>Activate </span></a>";
                       }  
                 echo "</td>";
             echo"</tr>";   

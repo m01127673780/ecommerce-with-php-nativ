@@ -22,6 +22,7 @@ if(isset($_SESSION['username'])){
 
 <div class=" container ">
 
+    <a href="?action=add" class="btn btn-primary"><i class="fa fa-plus"></i> New Item</a><br><br>
 
 
 
@@ -68,7 +69,8 @@ if(isset($_SESSION['username'])){
                           <span class= 'hiddin-in-768 '> Edit</span></a>
     
                           <a href='?action=delete&id=" .$row['id']. "' class='btn btn-danger confirm btn-smol'><i class='fas fa-times'></i> <span class= 'hiddin-in-768 '>Delete </span></a>
-                          <a href='comments.php?id=" .$row['id']. "' class='btn btn-primary btn-smol'><i class='fas fa-comments dash'></i></i> <span class= 'hiddin-in-768 '>Comments </span></a>";  
+                          <a href='comments.php?id=" .$row['id']. "' class='btn btn-primary btn-smol'><i class='fas fa-comments dash'></i></i> <span class= 'hiddin-in-768 '>Comments </span></a>"; 
+                 echo'<a href="?action=add" class="btn btn-primary"><i class="fa fa-plus"></i> </a> ';
                 echo "</td>";
             echo"</tr>";   
                
@@ -76,6 +78,8 @@ if(isset($_SESSION['username'])){
       ?>
             </tbody>
   </table>
+      <a href="?action=add" class="btn btn-primary"><i class="fa fa-plus"></i> New Item</a><br><br>
+
 </div>
 </div>
 
@@ -85,53 +89,7 @@ if(isset($_SESSION['username'])){
 
 
 
-    <div class="table-responsive">
-        <table class="main-table table table-bordered text-center">
-            <thead>
-                <tr>
-                    <th scope="col">#ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">image</td>
-                     <th scope="col">Description</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Adding Date</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Control</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-           foreach($items as $row){              
-           echo "<tr>";
-               echo "<td>".$row['id']."</td>";
-        /*-----------------------------------*/
-           echo "<td class='td-image'>" ;
-                  echo "<img src='../uploads/product-img/".$row['image']."' alt='img-mmber'/>";
-          echo"</td>";
-               /*-----------------------------------*/    
- 
-  
- 
-               echo "<td>".$row['name']."</td>";
-               echo "<td><span class='desc'>".$row['description']."</span></td>";
-               echo "<td>".$row['price']."</td>";
-               echo "<td>".$row['date']."</td>";
-               echo "<td>".$row['cat_name']."</td>";
-               echo "<td>".$row['username']."</td>";
-               echo "<td class='control text-center'> 
-                          <a href='?action=edit&id=" .$row['id']. "' class='btn btn-success'><i class='fas fa-edit'></i>Edit</a>
-                          <a href='?action=delete&id=" .$row['id']. "' class='btn btn-danger confirm'><i class='fas fa-times'></i>Delete</a>
-                          <a href='comments.php?id=" .$row['id']. "' class='btn btn-primary'><i class='fas fa-comments dash'></i></i>Comments</a>";  
-                echo "</td>";
-            echo"</tr>";   
-               
-      }
-      ?>
-            </tbody>
-        </table>
-    </div>
-    <a href="?action=add" class="btn btn-primary"><i class="fa fa-plus"></i> New Item</a><br><br>
+   
 </div><!-- end of container -->
 <?php  
       }/************* end of manage page *************/
