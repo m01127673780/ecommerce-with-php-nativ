@@ -22,7 +22,6 @@ if(isset($_SESSION['username'])){
       <thead>
         <tr>
           <th scope="col">#ID</th>
-          <th scope="col">image</td>
           <th scope="col">Name</th>
           <th scope="col">Description</th>
           <th scope="col">Price</th>
@@ -37,31 +36,6 @@ if(isset($_SESSION['username'])){
            foreach($items as $row){              
            echo "<tr>";
                echo "<td>".$row['id']."</td>";
-                /*-----------------------------------*/
-           echo "<td class='td-image'>" ;
-                  echo "<img src='../uploads/product-img/".$row['image']."' alt='img-mmber'/>";
-          echo"</td>";
-               /*-----------------------------------*/
-/*
-
-echo"<td>";
-if(! empty( $avatarName) && ! in_array($avatarExtension,$avatarAllowedExtension)){
-                  $formErrors[]  ='This Extension Is Not Allow    </div>  '; }
-
-
-
-          if(empty($row['avatar']) && empty($row['avatar']) ){
-            echo "<img src='img/img-member-defult.png' alt='img-mmber'/>";
-           }else{
-                  echo "<img src='uploads/avatars/".$row['avatar']."' alt='img-mmber'/>";
-
-           }
-           
-          echo"</td>";
-*/
-
-               /*-----------------------------------*/
-
                echo "<td>".$row['name']."</td>";
                echo "<td><span class='desc'>".$row['description']."</span></td>";
                echo "<td>".$row['price']."</td>";
@@ -120,11 +94,10 @@ if(! empty( $avatarName) && ! in_array($avatarExtension,$avatarAllowedExtension)
                           placeholder="Country Of The Item" minlength="3" required />
                 </div>
                 </div>
-                
-                <div class="form-group row">
-                <label class="col-sm-2 col-form-label form" >Product Image All</label>
+                      <div class="form-group row">
+                <label class="col-sm-2 col-form-label form" >Product Image</label>
                 <div class="col-sm-10 col-md-6">
-                  <input type="file" name="img []"  class="form-control" multiple="multiple" required />
+                  <input type="file" name="img" class="form-control" required />
                 </div>
                 </div>
                         <div class="form-group row">
@@ -222,7 +195,7 @@ if(! empty( $avatarName) && ! in_array($avatarExtension,$avatarAllowedExtension)
             if(strlen($name) < 3){
                 $err_form[] = 'Item Name Must Be At Least 3 Characters';
             }
-            if(strlen($description) < 1){
+            if(strlen($description) < 12){
                 $err_form[] = 'Item description Must Be At Least 12 Characters';
             }
             if(strlen($country) < 3){
@@ -240,8 +213,6 @@ if(! empty( $avatarName) && ! in_array($avatarExtension,$avatarAllowedExtension)
             if(empty($cat_id)){
                 $err_form[] = 'Categories Can\'t Be Not Empty';
             } 
-
-
 
             if(empty($_FILES['img']['name'])){
                 $err_form[] = 'You Should Upload Image';
@@ -324,7 +295,7 @@ if(! empty( $avatarName) && ! in_array($avatarExtension,$avatarAllowedExtension)
                           placeholder="Country Of The Item" value="<?php echo $row['country_made'];?>" minlength="3" required />
                 </div>
                 </div>
-                <div class="form-group row">
+                                  <div class="form-group row">
                 <label class="col-sm-2 col-form-label form" >Product Image</label>
                 <div class="col-sm-10 col-md-6">
                   <input type="file" name="img" class="form-control" />
@@ -429,7 +400,7 @@ if(! empty( $avatarName) && ! in_array($avatarExtension,$avatarAllowedExtension)
             if(strlen($name) < 3){
                 $err_form[] = 'Item Name Must Be At Least 3 Characters';
             }
-            if(strlen($description) < 1){
+            if(strlen($description) < 12){
                 $err_form[] = 'Item description Must Be At Least 12 Characters';
             }
             if(strlen($country) < 3){

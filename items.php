@@ -96,16 +96,16 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
                  $strOne = $item['image'];   
                  $str = $item['images'];   
                  $arr = explode(',', $str );
- 
+ echo '<pre>';
+    print_r($arr);  
+
+  echo '</pre>';
                  // print_r($arr);
                  for ($i = 0; $i <count($arr); $i++){
-  // echo '<pre>';
-  // print_r($arr);  
-
-  // echo '</pre>';
+    
                   // echo '<link rel="stylesheet"  href="css/"'.$arr [$i].'"/>';
                   echo ' <li><img   class="image-slider"  src="uploads/product-img/'.  $item['image'] .'" /> </li>';
-                  echo ' <li><img   class="image-slider"  src="uploads/product-img/'.$arr [$i].'" /> </li>';
+                  echo ' <li><img   class="image-slider" alt="NO IMSGE"  src="uploads/product-img/'.$arr [$i].'" /> </li>';
                    // echo '<img class ="img-responsive img-thumbnail mx-auto d-block"  src="uploads/product-img/ '.$arr [$i].'"/>';
                   }
                // @include 'index.html';
@@ -120,6 +120,7 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
     </p>
 </div>
 </div>
+<img src="" >
             </div>
             <div class="col-md-6">
                 <h2><?php echo $item['name'];?></h2>

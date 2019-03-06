@@ -32,61 +32,7 @@ if(isset($_SESSION['username'])){
 
 
 
-
-
-
-
- <h1 class="text-center">Manage Categories</h1>
-<i class='fas fa-edit btn-cat-hiddin-default'></i> <i class="fas- fa-edit   btn-cat-hiddin-default"></i>
-  <div class="container categories">
-        <div class="card  cat-hiddin-default" style="display:;">
-              <div class="card-header">
-                   <i class="fas fa-tag"></i> Manage Categories
-                  <div class="float-right ordering">
-                      <i class="fas fa-sort"></i> Ordering: [
-                      <a href="?sort=asc" class="<?php if($sort == 'asc')echo 'active'; ?>">ASC</a> |
-                      <a href="?sort=desc" class="<?php if($sort == 'desc')echo 'active'; ?>">DESC</a> ]
-                      <i class='fas fa-eye'></i> View: [
-                      <span class="active full">Full</span> |
-                      <span class="classic">Classic</span> ]
-                  </div>
-              </div>
-              <div class="card-body">
-                    <?php
-                      foreach($categories as $row){
-                          $row['description'] = empty($row['description']) ? 'This category has no description' : $row['description'];
-                          echo "<div class='cat'>";
-                          echo "<div class='hidden-button  float-right'>";
-                          echo "<a href='?action=edit&catid=" . $row['id'] . "' class='btn btn-sm btn-primary'><i class='fas fa-edit'></i>Edit</a>";
-                          echo "<a href='?action=delete&catid=" . $row['id'] . "' class='btn btn-sm btn-danger confirm'><i class='fas fa-times'></i>Delete</a>";
-                           echo' <a href="?action=add" class="btn btn-primary"><i class="fa fa-plus"></i>  </a>';
-
-                          echo "</div>";
-                          echo "<h3 class='card-title'>" .$row['name'] . "</h3>";
-                          echo "<div class='card-text'>";
-                          echo "<div class='full-view'>";
-                          echo "<p>" .$row['description'] . "</p>";
-                          if($row['visibility'] == 1) echo "<span class='visible'><i class='fas fa-eye'></i> Hidden </span>";
-                          if($row['allow_comment'] == 1) echo "<span class='comment'><i class='fas fa-times'></i> Comment Disabled </span>";
-                          if($row['allow_ads'] == 1) echo "<span class='ads'><i class='fas fa-times'></i> Ads Disabled </span>";
-                          echo "</div>";   /* End of full-view div */
-                          echo "</div>";  /* End of card-text div */
-                          echo"</div>";   /* End of cat div */
-                          echo "<hr>";
-                          
-                      }
-                    ?>
-                  
-              </div>
-        </div>  <!--end of div card-->
-       <a href="?action=add" class="btn btn-primary"><i class="fa fa-plus"></i> New Category</a>
-    </div><!--end of div container-->
-<br><br>
-
-
-
-
-
+ 
 <!-- ================================================================ -->
 
 

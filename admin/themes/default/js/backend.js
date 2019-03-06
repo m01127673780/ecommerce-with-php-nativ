@@ -49,6 +49,22 @@ $(function() {
              $(this).html('<i class="fas fa-plus">')
         }
     })
+
+
+    $('.btn-cat-hiddin-default').click(function(){
+        $('.cat-hiddin-default').fadeToggle();
+    })
+
+    // $('.cat-hiddin-default').click(function(){
+    //     $('.cat-hiddin-default').fadeToggle();
+    // } function(){
+
+    //    $('.cat-hiddin-table').fadeToggle();
+    // } );
+
+   
+
+
     
   $(function() {
   $(".table-wrap").each(function() {
